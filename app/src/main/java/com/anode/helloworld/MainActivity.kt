@@ -29,12 +29,9 @@ class MainActivity : AppCompatActivity() {
 
             val message:String = massageInpuText.text.toString()
             //Toast.makeText(this, message, Toast.LENGTH_LONG).show()
-
             val addressMessage:String = addressInputText.text.toString()
             //Toast.makeText(this, addressMessage, Toast.LENGTH_SHORT).show()
-
             val intent = Intent(this, SecondActivity::class.java)//Explicit Intent
-
             intent.putExtra("Name", message)
             intent.putExtra("Address", addressMessage)
             startActivity(intent)
