@@ -19,6 +19,8 @@ class SecondActivity : AppCompatActivity() {
 
         showToastMsg.setOnClickListener {
             Toast.makeText(this, name, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, address, Toast.LENGTH_SHORT).show()
+
         }
     }
 }
