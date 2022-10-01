@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
         sendOtherApps.setOnClickListener {
             val message:String =massageInpuText.text.toString()
             val intent =Intent()
+
             intent.action=Intent.ACTION_SEND
             intent.putExtra(Intent.EXTRA_TEXT, message)
             intent.type="text/plain"
